@@ -2867,14 +2867,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-light {
-  color: #212529;
-  background-color: #f8f9fa;
+  color: #1D709C;
+  background-color: white;
   border-color: #f8f9fa;
 }
 
 .btn-light:hover {
-  color: #212529;
-  background-color: #e2e6ea;
+  color: #1D709C;
+  background-color: white;
   border-color: #dae0e5;
 }
 
@@ -7026,6 +7026,10 @@ button.bg-light:focus {
   background-color: #343a40 !important;
 }
 
+.bg-blue {
+  background-color: #1D709C !important;
+}
+
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
@@ -10631,6 +10635,13 @@ hr.light {
   background-color: #1D709C;
 }
 
+.btn-cta {
+  background-color: white;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 .page-section {
   padding: 8rem 0;
 }
@@ -10821,8 +10832,8 @@ header.masthead h1 {
 }
 
 #portfolio .story2{
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url("../img/on-site_view.png");
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/on-site_view.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url("../img/capital.png");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/capital.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
