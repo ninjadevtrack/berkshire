@@ -2652,12 +2652,14 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #f4623a;
   border-color: #f4623a;
+  border-width: 1px;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #f24516;
-  border-color: #ee3e0d;
+  background-color: white;
+  color: #1D709C;
+  border-color: #1D709C;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -10609,7 +10611,7 @@ html {
 hr.divider {
   max-width: 3.25rem;
   border-width: 0.2rem;
-  border-color: #f4623a;
+  border-color: white;
 }
 
 hr.light {
@@ -10795,8 +10797,8 @@ header.masthead h1 {
 }
 
 #portfolio .story {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url("../img/industrial.png");
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/industrial.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 11, 57, 0)), to(#000B39)), url("../img/industrial.png");
+  background: linear-gradient(to bottom, rgba(0, 11, 57, 0) 0%, #000B39 100%), url("../img/industrial.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10832,4 +10834,8 @@ header.masthead h1 {
 
 .story div,.story1 div,.story2 div  {
   max-width: 100%;
+}
+
+.font-title {
+  padding: 0 3rem;
 }
