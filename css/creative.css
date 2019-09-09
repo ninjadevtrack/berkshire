@@ -166,6 +166,54 @@ sup {
   height: 100vh;
 }
 
+.mastcontent-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../berkshire/img/featured_project1.png");
+}
+
+#featured_project {
+  height: 21rem;
+}
+
+#featured1 {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  min-height: 0;
+  width: 50%;
+  padding-bottom: 0;
+  z-index: 2;
+}
+
+.featured-bgImg {
+  width: 100%;
+  height: 21rem;
+  position: absolute;
+  background-image: url("../img/featured_project1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.featured-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  min-height: 35rem;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  -webkit-transform: skewX(-16deg);
+  transform: skewX(-16deg);
+  -webkit-transform-origin: top right;
+  transform-origin: top right;
+}
+
 .masthead-container video {
   position: absolute;
   min-width: 100%;
@@ -174,6 +222,12 @@ sup {
   height: 100%;
   z-index: 100;
   object-fit:cover;
+}
+
+.mastcontent-container img {
+  position: absolute;
+  min-width: 100%;
+  width: 100%;
 }
 
 .masthead-container .video-overlay {
@@ -186,7 +240,24 @@ sup {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.mastcontent-container .img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 .masthead-container .masthead {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 300;
+}
+
+.mastcontent-container .mastcontent {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -10885,4 +10956,29 @@ header.masthead h1 {
 
 .onsite-right-address {
   margin-top: -1.5rem;
+}
+
+.masthead .masthead-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  min-height: 35rem;
+  height: 100%;
+  background-color: rgba(0,46,102,.8);
+  -webkit-transform: skewY(4deg);
+  transform: skewY(4deg);
+  -webkit-transform-origin: bottom right;
+  transform-origin: bottom right;
+  background-image: url("../img/featured_project1.png")
+}
+
+.masthead .masthead-bg {
+  min-height: 0;
+  -webkit-transform:skewX(-8deg);
+  transform: skewX(-8deg);
+  -webkit-transform-origin: top right;
+  transform-origin: top right;
 }
