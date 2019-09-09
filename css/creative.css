@@ -10850,3 +10850,39 @@ header.masthead h1 {
 .font-title {
   padding: 0 3rem;
 }
+
+#onsite {
+  background-color: black;
+  opacity: 0.9;
+}
+
+.onsite-top {
+  color: white;
+  background-color: #1D709C;
+  text-transform: uppercase;
+  padding: 0.5rem 3rem !important;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 120%;
+}
+
+.onsite-bottom {
+  padding: 4rem 4rem !important;
+}
+
+.onsite-left img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.onsite-right-title {
+  font-family: 'Open Sans';
+  font-size: 1.45rem;
+  font-weight: bold !important;
+}
+
+.onsite-right-address {
+  margin-top: -1.5rem;
+}
