@@ -174,7 +174,7 @@ sup {
 }
 
 #featured_project {
-  height: 21rem;
+  height: 29rem;
 }
 
 #featured1 {
@@ -182,20 +182,35 @@ sup {
   overflow: hidden;
   height: 100%;
   min-height: 0;
-  width: 50%;
-  padding-bottom: 0;
+  width: 55%;
+  padding-bottom: 1rem;
   z-index: 2;
+  float: left;
+}
+
+#featured2 {
+  position: relative;
+  min-height: 0;
+  width: 45%;
+  float: right;
 }
 
 .featured-bgImg {
   width: 100%;
-  height: 21rem;
+  height: 29rem;
   position: absolute;
   background-image: url("../img/featured_project1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+}
+
+.featured_content {
+  text-align: left;
+  padding-left: 4rem !important;
+  padding-right: 8rem !important;
+  max-width: 100%;
 }
 
 .featured-bg {
@@ -205,8 +220,6 @@ sup {
   right: 0;
   left: 0;
   width: 100%;
-  min-height: 35rem;
-  height: 100%;
   background-color: rgba(0,0,0,.8);
   -webkit-transform: skewX(-16deg);
   transform: skewX(-16deg);
@@ -10981,4 +10994,67 @@ header.masthead h1 {
   transform: skewX(-8deg);
   -webkit-transform-origin: top right;
   transform-origin: top right;
+}
+
+.btn_project {
+  padding: 1rem 2rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: none;
+  border: none;
+  background-color: #1D709C;
+}
+
+.vimeo-launch {
+  cursor: pointer;
+}
+
+/* Fullscreen Overlay */
+.overlay {
+  width: 100%;
+  height: 100vh;
+  /* 50% opacity black */
+  background: rgba(0,0,0,.5);
+  /* Stays locked on scroll */
+  position: fixed;
+  /* On top of the rest*/
+  z-index: 2;
+  /* Hidden */
+  opacity: 0;
+  /* No interference */
+  left: -100%;
+  /* CSS3 Transition */
+  transition: opacity .5s;
+  -webkit-transition: opacity .5s;
+}
+
+/* 90% width container */
+.video-container {
+  width: 90%;
+  /* Centering */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.close {
+  width: 20px;
+  fill: white;
+  position: absolute;
+  right: 0;
+  /* Bring above video */
+  top: -30px;
+}
+
+.close:hover {
+  /* 50% opacity white */
+  fill: rgba(255,255,255,0.5);
+  cursor: pointer;
+}
+
+/* Class to fade in overlay */
+.show {
+  opacity: 1;
 }
